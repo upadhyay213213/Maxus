@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    >
+
+    <include
+        android:id="@+id/headerID"
+        layout="@layout/header"></include>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_below="@id/headerID"
+        android:background="@color/light_grey_back"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerID"
+        android:background="@color/light_grey_back"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="190dp"
+            android:background="@drawable/person1"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@color/app_background"
+            ></View>
+
+        <RelativeLayout
+            android:id="@+id/maxusServicesrelID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rounded_button">
+
+            <ImageView
+                android:id="@+id/maxusServicesID"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/public_icon"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/services"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/maxusServicesID"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/financialRelID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button">
+
+            <ImageView
+                android:id="@+id/financialID"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/signal"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/Apps"
+                android:layout_toRightOf="@id/financialID"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contactRelID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button">
+
+            <ImageView
+                android:id="@+id/contactUS"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/inbox"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/contact_us"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/contactUS"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
+
+     <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/menuHomeID"
+        layout="@layout/menu_top"
+        android:layout_marginTop="65dp"
+        >
+    </include>
+
+</RelativeLayout>

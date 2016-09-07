@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/menuToprectID"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/icon_grey_pullup"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        />
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rectangle_1"
+        android:layout_height="220dp">
+
+        <TextView
+            android:id="@+id/home"
+            android:textSize="20sp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="Home"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/darker_gray"
+            ></View>
+
+        <TextView
+            android:id="@+id/services"
+            android:textSize="20sp"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"
+            android:text="Services"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/darker_gray"
+            ></View>
+        <TextView
+            android:id="@+id/financialApp"
+            android:textSize="20sp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:text="Financial Apps"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/darker_gray"
+            ></View>
+        <TextView
+            android:id="@+id/contactUSMenu"
+            android:textSize="20sp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:text="Contact Us"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            />
+        <!--<View-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+
+            <!--android:background="@android:color/darker_gray"-->
+            <!--></View>-->
+
+    </LinearLayout>
+
+
+</RelativeLayout>

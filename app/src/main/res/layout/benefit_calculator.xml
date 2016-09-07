@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/headerID"
+        layout="@layout/header"></include>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_below="@id/headerID"
+        android:layout_marginBottom="30dp"
+        android:scrollbars="none"
+        android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/light_grey_back"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="CONTRIBUTION CALCULATOR"
+                android:textColor="@color/title_font"
+                android:textSize="18sp"
+                android:id="@+id/txtheading"
+                />
+
+            <ImageView
+                android:id="@+id/informationBenifactor"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/info"
+
+                ></ImageView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"></View>
+
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:orientation="vertical"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginBottom="30dp"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="20dp"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="TYPE OF BUSINESS"
+                   android:textSize="16sp"
+                   android:layout_gravity="center_vertical"
+                   android:layout_marginLeft="25dp"
+                   />
+
+               <RelativeLayout
+                   android:id="@+id/bussinessRelID"
+                   android:layout_width="fill_parent"
+                   android:orientation="horizontal"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:background="@drawable/edit_text"
+                   android:layout_marginTop="5dp"
+                   android:layout_height="wrap_content">
+
+
+                   <EditText
+                       android:hint="-Select-"
+                       android:id="@+id/bussinessEditTextID"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:editable="false"
+                       android:clickable="false"
+                       android:textSize="16sp"
+                       android:background="@android:color/white"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginLeft="10dp"
+                       />
+                   <Spinner
+                       android:id="@+id/bussinessSpinnerID"
+                       android:layout_marginTop="5dp"
+                       android:layout_width="30dp"
+                       android:layout_centerVertical="true"
+                       android:layout_marginRight="10dp"
+                       android:layout_alignParentRight="true"
+                       android:background="@drawable/down_arrow"
+                       android:padding="20dp"
+                       android:layout_height="30dp" />
+
+               </RelativeLayout>
+
+
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="20dp"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="NUMBER OF COMMON LAW EMPLOYEE"
+                   android:textSize="16sp"
+                   android:layout_gravity="center_vertical"
+                   android:layout_marginLeft="25dp"
+                   />
+
+               <RelativeLayout
+                   android:id="@+id/commonLawRelID"
+                   android:layout_width="fill_parent"
+                   android:orientation="horizontal"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:background="@drawable/edit_text"
+                   android:layout_marginTop="5dp"
+                   android:layout_height="wrap_content">
+
+
+                   <EditText
+                       android:id="@+id/commonLawEditTextID"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:editable="false"
+                       android:clickable="false"
+                       android:textSize="16sp"
+                       android:background="@android:color/white"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginLeft="5dp"
+                       />
+                   <Spinner
+                       android:id="@+id/CommonLawSpinnerID"
+                       android:layout_marginTop="5dp"
+                       android:layout_width="30dp"
+                       android:layout_centerVertical="true"
+                       android:layout_marginRight="10dp"
+                       android:layout_alignParentRight="true"
+                       android:background="@drawable/down_arrow"
+                       android:padding="20dp"
+                       android:layout_height="30dp" />
+
+               </RelativeLayout>
+
+               <LinearLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_marginTop="20dp"
+                   >
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="COMPENSATION(SUBJECT TO PAYROLL TAX)"
+                       android:textSize="16sp"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginLeft="25dp"
+                       />
+
+                   <RelativeLayout
+                       android:id="@+id/compensationRelID"
+                       android:layout_width="fill_parent"
+                       android:orientation="horizontal"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       android:background="@drawable/edit_text"
+                       android:layout_marginTop="5dp"
+                       android:layout_height="wrap_content">
+
+                       <EditText
+                           android:id="@+id/comoensationEditTextID"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerVertical="true"
+                           android:editable="false"
+                           android:clickable="false"
+                           android:textSize="16sp"
+                           android:background="@android:color/white"
+                           android:layout_gravity="center_vertical"
+                           android:layout_marginLeft="5dp"
+                           />
+
+                       <Spinner
+                           android:id="@+id/compensationSpinnerID"
+                           android:layout_marginTop="5dp"
+                           android:layout_width="30dp"
+                           android:background="@drawable/down_arrow"
+                           android:layout_centerVertical="true"
+                           android:layout_marginRight="10dp"
+                           android:layout_alignParentRight="true"
+                           android:padding="20dp"
+                           android:layout_height="30dp" />
+
+                   </RelativeLayout>
+
+                   <LinearLayout
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_marginTop="20dp"
+                       >
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="AGE"
+                           android:textSize="16sp"
+                           android:layout_gravity="center_vertical"
+                           android:layout_marginLeft="25dp"
+                           />
+
+                       <RelativeLayout
+                           android:id="@+id/agerelID"
+                           android:layout_width="fill_parent"
+                           android:orientation="horizontal"
+                           android:layout_marginLeft="20dp"
+                           android:layout_marginRight="20dp"
+                           android:background="@drawable/edit_text"
+                           android:layout_marginTop="5dp"
+                           android:layout_height="wrap_content">
+                            <EditText
+                           android:id="@+id/ageEditTextID"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerVertical="true"
+                           android:editable="false"
+                           android:clickable="false"
+                           android:textSize="16sp"
+                           android:background="@android:color/white"
+                           android:layout_gravity="center_vertical"
+                           android:layout_marginLeft="5dp"
+                           />
+                           <Spinner
+                               android:id="@+id/ageSpinnerID"
+                               android:layout_marginTop="5dp"
+                               android:layout_width="30dp"
+                               android:background="@drawable/down_arrow"
+                               android:layout_centerVertical="true"
+                               android:layout_marginRight="10dp"
+                               android:layout_alignParentRight="true"
+                               android:padding="20dp"
+                               android:layout_height="30dp" />
+
+                       </RelativeLayout>
+
+                       <Button
+                           android:id="@+id/calculate"
+                           android:layout_marginTop="10dp"
+                           android:layout_gravity="center_horizontal"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="CALCULATE"
+                           android:textSize="16sp"
+                           android:textColor="@android:color/white"
+                           android:background="@drawable/rounded_button"
+                           />
+
+                   </LinearLayout>
+               </LinearLayout>
+
+           </LinearLayout>
+
+       </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/menuHomeID"
+        layout="@layout/menu_top"
+        android:layout_marginTop="65dp"
+        >
+    </include>
+    </RelativeLayout>

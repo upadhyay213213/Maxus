@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+
+
+    <include
+        android:id="@+id/headerID"
+        layout="@layout/header"></include>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_below="@id/headerID"
+        android:layout_marginBottom="30dp"
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@color/light_grey_back"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/contact_us1"
+                android:textColor="@color/title_font"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/informationContactID"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/info"></ImageView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"></View>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NAME"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"
+                    />
+                <EditText
+                    android:id="@+id/contactUSNameID"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="fill_parent"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/edit_text"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EMAIL"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:id="@+id/contactUSEmailID"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:layout_width="fill_parent"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edit_text"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHONE"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:id="@+id/contactUSPhoneID"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:layout_width="fill_parent"
+                android:inputType="phone"
+                android:background="@drawable/edit_text"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMMENT"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:id="@+id/contactUSCommentID"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:gravity="start|left"
+                android:layout_width="fill_parent"
+                android:background="@drawable/edit_text"
+                android:layout_height="150dp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submitButtonID"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SUBMIT"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/menuHomeID"
+        layout="@layout/menu_top"
+        android:layout_marginTop="65dp"
+        >
+    </include>
+</RelativeLayout>

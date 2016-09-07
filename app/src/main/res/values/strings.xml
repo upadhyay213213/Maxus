@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Maxus</string>
+    <string name="action_settings">Settings</string>
+    <string name="services">MAXUS SERVICES</string>
+    <string name="Apps">FINANCIAL APPS</string>
+    <string name="contact_us">CONTACT US</string>
+    <string name="Services_we">SERVICES WE OFFER</string>
+    <string name="Services_detail">We provide timely, accurate and complete plan services that meet the extensive reporting and disclosure requirements.</string>
+    <string name="plan1">401(K) plan</string>
+    <string name="plan2">401(k)Profit Sharing</string>
+    <string name="plan3">403(b)</string>
+    <string name="plan4">457</string>
+    <string name="plan5">Money Purchase</string>
+    <string name="plan6">Defined Benefit(Traditional)</string>
+    <string name="plan7">Defined Benefit(Cash Balance)</string>
+    <string name="plan8">ESOP</string>
+    <string name="finance_app">VIEW YOUR FINANCE APPS</string>
+    <string name="finance_app1">FINANCIAL APPS</string>
+    <string name="consultation">CONTACT MAXUS</string>
+    <string name="coming_soon">COMING SOON</string>
+    <string name="contact_us1">CONTACT US</string>
+    <string name="benefit_calculator">Maximum Savings Tool</string>
+    <string name="what_is">WHAT ARE FINANCIAL APPS?</string>
+    <string name="enquiry">We have recieved your enquiry and will respond to you within 24 hours For Urgent enquiries please call.</string>
+    <string name="number">704-360-8055</string>
+</resources>
